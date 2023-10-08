@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee List</title>
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <!-- Include the navbar fragment -->
+        <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+        <div class="container mt-5">
+            <h1>Welcome to our Website</h1>
+            <p><span>Current time is [[${#dates.createNow()}]]</span></p>
+            <p>Some other information may be found on other pages</p>
+        </div>
+        
+         <script src="/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

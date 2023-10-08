@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Add your head content here -->
+  </head>
+<body>
+  <!-- Include the navbar fragment -->
+  <div th:replace="fragments/navbar :: navbar"></div>
+
+  <!-- Include the header fragment -->
+  <div th:replace="fragments/header :: header"></div>
+
+  <!-- Main content -->
+  <div class="container">
+    <div th:replace="fragments/main :: main"></div>
+  </div>
+
+  <!-- Include the footer fragment -->
+  <div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
